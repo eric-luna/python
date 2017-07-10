@@ -11,6 +11,28 @@ def main():
 	# Get today's date from the simple today() method from the date class
 	today = date.today()
 	print ("Today's date is ", today)
+
+	# print out the date's individual components
+	print ("Date Components: ", today.day, today.month, today.year)
+
+	# retrieve today's weekday (0=Monday, 6=Sunday)
+	print ("Today's Weekday #: ", today.weekday())
+
+	# Get today's date from the datetime class
+	today = datetime.now()
+	print  ("The current date and time is ", today)
+
+	# Get the current time
+	t = datetime.time(datetime.now())
+	print  ("The current time is ", t)
+	
+	# weekday returns 0 (monday) through 6 (sunday)
+	wd = date.weekday(today)  
+
+	# Weekday return 0 (Monday) through 6 (Sunday)
+	days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+	print ("Today is day number %d" % wd)
+
   
   
 if __name__ == "__main__":
