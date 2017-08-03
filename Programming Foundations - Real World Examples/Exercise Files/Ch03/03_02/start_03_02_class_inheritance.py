@@ -29,3 +29,13 @@ class Motorcycle(Vehicle): # Inherits from Vehicle class
     # put on motocycle helmet
     def helmet(self):
         print('Nice and safe!')
+
+class ECar(Car):
+    def drive(self):
+        print("The {} {} goes ssshhhh!".format(self.color,self.manuf))
+
+my_ecar = ECar("white","Nissan")
+my_ecar.window()
+my_ecar.drive()
+my_ecar.gas
+
