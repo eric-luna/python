@@ -8,3 +8,10 @@ coworker = set(['Aaron', 'Bill', 'Brandon', 'David',
 
 family = set(['Garry', 'Landon', 'Larry', 'Mark',
               'Olivia', 'Katy', 'Rae', 'Tom'])
+
+print(len(college))
+print(len(coworker))
+print(len(family))
+
+friends = college.union(coworker,family)
+print(len(friends))

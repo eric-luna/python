@@ -8,7 +8,7 @@ lot_2d = [['Toyota','Audi','BMW'], # 0th row
 
 # 3D list of lists of lists
 #  - index cars by floor, row, spot
-lot_3d = [[['Telsa','Fiat','BMW'], # 0th floor
+lot_3d = [[['Tesla','Fiat','BMW'], # 0th floor
            ['Honda','Jeep'],        
            ['Saab','Kia','Ford']],
           [['Subaru','Nissan'],    # 1st floor
@@ -16,3 +16,8 @@ lot_3d = [[['Telsa','Fiat','BMW'], # 0th floor
           [['Mazda','Chevy'],      # 2nd floor
            [],
            ['Volkswagen']]]
+
+for floor in lot_3d:
+	for row in floor:
+		for car in row:
+			print(car)
