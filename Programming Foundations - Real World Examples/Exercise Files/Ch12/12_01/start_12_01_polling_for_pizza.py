@@ -15,3 +15,4 @@ while(hungry):
 
     print('Closing the front door.')
     front_door.close()  
+ 
